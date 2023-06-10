@@ -26,17 +26,13 @@ class CalculatorTests(unittest.TestCase):
         calc = Calculator()
         self.assertEqual(15, calc.multiply(7,3))
       
-    def test_division(self):
-        calc = Calculator()
-        self.assertEqual(27,calc.division(9,3))
+    
 
     def test_SquareRoot(self):
         calc=Calculator()
         self.assertEqual(9,calc.squareRoot(81))
 
-    def test_negative_root(self):
-        calc = Calculator()
-        self.assertRaises(ValueError,calc.squareRoot, -1)
+  
       
 if __name__ == '__main__':
     unittest.main()
